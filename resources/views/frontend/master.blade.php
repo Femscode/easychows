@@ -432,7 +432,7 @@
            
             <div class="border-top py-4">
                <div class="row align-items-center">
-                  <div class="col-lg-5 text-lg-start text-center mb-2 mb-lg-0">
+                  <!-- <div class="col-lg-5 text-lg-start text-center mb-2 mb-lg-0">
                      <ul class="list-inline mb-0">
                         <li class="list-inline-item text-dark">Partners Vendors</li>
                         <li class="list-inline-item">
@@ -451,7 +451,7 @@
                            <a href="#!"><img src="assets/images/payment/visa.svg" alt="" /></a>
                         </li>
                      </ul>
-                  </div>
+                  </div> -->
                   <div class="col-lg-7 mt-4 mt-md-0">
                      <ul class="list-inline mb-0 text-lg-end text-center">
                         <li class="list-inline-item mb-2 mb-md-0 text-dark">Get it delivered with EasyChow</li>

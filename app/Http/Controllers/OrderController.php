@@ -174,10 +174,7 @@ class OrderController extends Controller
         $d_price = intval($request->delivery_amount);
         $s_price = $cart->totalPrice + intval($fee) + $extraFee;
 
-
-     
-
-        $whatsappMessage = "*ORDER%20%20FROM%20EASYCHOWS*%20%0a*ORDER%20DETAILS*%0aOrder%20ID%20:%20EC-" . $order->order_id . "%0a--�--%0a" . $packs . "*SUB%20TOTAL%20:%20₦" . $s_price . "*%0a*DELIVERY%20PRICE%20:%20₦" . $d_price . "*%0a*TOTAL%20PRICE%20:%20₦" . $f_price . "*%0a------*CUSTOMER%20DETAILS*------%0aName%20:%20" . $request->name . "%0aLocation%20:%20" . $request->location . "%0aAddress%20:%20" . $request->address . "%0aPhone%20number%20:%20" . $request->phone . "%0a*---PRICE%20CONFIRMATION*---%0ahttps://cttaste.com/price/" . $user->id . "/" . $order->order_id;
+        $whatsappMessage = "*ORDER%20%20FROM%20EASYCHOWS*%20%0a*ORDER%20DETAILS*%0aOrder%20ID%20:%20EC-" . $order->order_id . "%0a--�--%0a" . $packs . "*SUB%20TOTAL%20:%20₦" . $s_price . "*%0a*DELIVERY%20PRICE%20:%20₦" . $d_price . "*%0a*TOTAL%20PRICE%20:%20₦" . $f_price . "*%0a------*CUSTOMER%20DETAILS*------%0aName%20:%20" . $request->name . "%0aLocation%20:%20" . $request->location . "%0aAddress%20:%20" . $request->address . "%0aPhone%20number%20:%20" . $request->phone . "%0a*---PRICE%20CONFIRMATION*---%0ahttps://easychows.com/price/" . $user->id . "/" . $order->order_id;
         // dd($whatsappMessage);
      
            
