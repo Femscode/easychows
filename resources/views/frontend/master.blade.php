@@ -458,13 +458,12 @@
                         <li class="list-inline-item ms-4">
                            <a href="/register">
                             Register As A Vendor
-                            <!-- <img src="assets/images/appbutton/appstore-btn.svg" alt="" style="width: 140px" /> -->
                         </a>
                         </li>
                         <li class="list-inline-item">
-                           <a href="#!">
+                           <a href="https://wa.me/2348101187105">
                             
-                            <!-- <img src="assets/images/appbutton/googleplay-btn.svg" alt="" style="width: 140px" /> -->
+                          Contact Us
                         </a>
                         </li>
                      </ul>

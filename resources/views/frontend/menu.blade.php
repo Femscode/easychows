@@ -16,7 +16,7 @@
                <div class="card py-1 border-0 mb-8">
                   <div>
                      <h1 class="fw-bold">{{$rest->name}}</h1>
-                     <p class="mb-0">{{$rest->description}}</p>
+                     <h4 class="mb-0">{{$rest->description}}</h4>
                      <a href='tel:{{$rest->phone}}' class='btn btn-info'>Call To Order</a>
 
                      <input type='hidden' id='appendmenuplate' value='1' />
@@ -25,8 +25,8 @@
             </div>
             <!-- row -->
             <div class="row">
-               <div class="col-lg-8 col-md-7">
-                  <div class="py-3">
+               <div class="col-lg-8 col-md-8">
+                  <div class="">
                      <!-- alert -->
                      <div class="alert alert-info p-2" role="alert">
                         Delivery is between
@@ -35,10 +35,10 @@
                      <ul class="list-group list-group-flush">
                         <!-- list group -->
                         @foreach($menus as $i =>$menu)
-                        <li class="list-group-item py-3 ps-0">
+                        <li class="list-group-item ps-0">
                            <!-- row -->
                            <div class="row align-items-center">
-                              <div class="col-6 col-md-6 col-lg-7">
+                              <div class="col-8 col-md-8 col-lg-8">
                                  <div id='pepe{{$menu->category_id}}' class="d-flex">
                                     <!-- <img src="../assets/images/products/product-img-1.jpg" alt="Ecommerce"  /> -->
                                     @if(substr($menu->image, 0, 5) == 'https')
@@ -50,17 +50,16 @@
                                     @endif
                                     <div class="ms-3">
                                        <!-- title -->
-                                       <a href="shop-single.html" class="text-inherit">
+                                       <a href="#" class="text-inherit">
                                           <h6 class="mb-0">{{$menu->name}}</h6>
                                        </a>
-                                       <span><small class="text-muted">{{$menu->category->name ?? ""}}</small></span>
-                                       <!-- text -->
+                                       <span class="fw-bold">₦{{number_format($menu->price)}}</span>
 
                                     </div>
                                  </div>
                               </div>
                               <!-- input group -->
-                              <div class="col-4 col-md-4 col-lg-3">
+                              <div class="col-4 col-md-4 col-lg-4">
                                  <!-- input -->
                                  <!-- input -->
                                  <div class="input-group input-spinner">
@@ -69,10 +68,7 @@
                                     <input data-id='{{$menu->id}}' type="button" value="+" class="addmenu button-plus btn btn-sm" data-field="quantity" />
                                  </div>
                               </div>
-                              <!-- price -->
-                              <div class="col-2 text-lg-end text-start text-md-end col-md-2">
-                                 <span class="fw-bold">₦{{number_format($menu->price)}}</span>
-                              </div>
+                             
                            </div>
                         </li>
 
@@ -85,7 +81,7 @@
                </div>
 
                <!-- sidebar -->
-               <div class="col-12 col-lg-4 col-md-5">
+               <div class="col-12 col-lg-4 col-md-4">
                   <!-- card -->
                   <div class="mb-5 card mt-6">
                      <div class="card-body p-6">
