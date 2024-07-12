@@ -8,7 +8,6 @@ use App\Models\Food;
 use App\Models\User;
 use Illuminate\Support\Facades\Session;
 use App\Models\DeliveryLocation;
-use App\Models\Discount;
 use Illuminate\Http\Request;
 
 use App\Models\School;

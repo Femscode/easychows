@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Auth;
 
 use App\Models\User;
 use App\Models\Category;
-use App\Http\Traits\ApiUser;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rules;
 use App\Http\Traits\CreateCategory;
@@ -20,7 +19,7 @@ use Illuminate\Support\Facades\Validator;
 class RegisteredUserController extends Controller
 {
     use CreateCategory;
-    use ApiUser;
+    
 
 
     /**

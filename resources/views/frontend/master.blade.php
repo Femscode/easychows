@@ -56,21 +56,21 @@
    <body>
       <!-- navbar -->
       <div class="border-bottom">
-         <div class="bg-light py-1">
+         <!-- <div class="bg-light py-1">
             <div class="container">
                <div class="row">
                   <div class="col-md-6 col-12 text-center text-md-start"><span>Discover Easy Chows, Enjoy Every Bite</span></div>
                 
                </div>
             </div>
-         </div>
-         <div class="py-5">
-            <div class="container">
-               <div class="row w-100 align-items-center gx-lg-2 gx-0">
-                  <div class="col-xxl-2 col-lg-3 col-md-6 col-5">
+         </div> -->
+         <div class="py-5 ">
+            <div class="container ">
+               <div class="row w-100 align-items-center gx-lg-2 gx-0 ">
+                  <div class="col-xxl-2 col-lg-3 col-md-6 col-5 ">
                      <a class="navbar-brand d-none d-lg-block" href="/">
                         
-                        <img src="{{url('assets/images/logo/easychows-logo.jpeg')}}" height='100px' width='150px' alt="EasyChow Logo" />
+                        <img src="{{url('assets/images/logo/easychows-logo.jpeg')}}" height='70px' width='100px' alt="EasyChow Logo" />
                      </a>
                      <div class="d-flex justify-content-between w-100 d-lg-none">
                         <a class="navbar-brand" href="/">
@@ -151,7 +151,10 @@
             <div class="container">
                <div class="offcanvas offcanvas-start" tabindex="-1" id="navbar-default" aria-labelledby="navbar-defaultLabel">
                   <div class="offcanvas-header pb-1">
-                     <a href="index-2.html"><img src="assets/images/logo/freshcart-logo.svg" alt="eCommerce HTML Template" /></a>
+                     <a href="/">
+                     <img src="{{url('assets/images/logo/easychows-logo.jpeg')}}" height='70px' width='100px' alt="EasyChow Logo" />
+                     
+                     </a>
                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
                   <div class="offcanvas-body">

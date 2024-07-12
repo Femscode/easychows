@@ -8,7 +8,6 @@ use App\Models\Food;
 use App\Models\User;
 use App\Models\Event;
 use App\Models\School;
-use App\Models\AppUser;
 use App\Models\Transaction;
 use App\Models\WorkingHour;
 use Illuminate\Support\Str;
@@ -1145,75 +1144,5 @@ class SchoolController extends Controller
 
     //the referral code here 
 
-    public function getAppUser(Request $request)
-    {
-
-        try {
-            $this->validate($request, [
-                'user_id' => 'required',
-                'name' => 'required',
-                'email' => 'required',
-                'phone' => 'required',
-                'referral_code' => 'required'
-            ]);
-            AppUser::create([
-                'user_id' => $request->user_id,
-                'name' => $request->name,
-                'email' => $request->email,
-                'phone_number' => $request->phone,
-                'referral_code' => $request->referral_code,
-                'hod_referral_code' => $request->referral_code
-            ]);
-            $response = [
-                'success' => true,
-                'message' => 'Newly registered user saved',
-            ];
-            return response()->json($response);
-        } catch (\Exception $e) {
-
-            $response = [
-                'success' => false,
-                'message' => $e->getMessage(),
-            ];
-            return response()->json($response);
-        }
-    }
-    public function getAllAppUser(Request $request)
-    {
-        try {
-            $data = AppUser::orderBy('referral_count', 'desc')->get();
-            $response = [
-                'success' => true,
-                'message' => 'Referral Users Fetched',
-                'data' => $data,
-            ];
-            return response()->json($response);
-        } catch (\Exception $e) {
-
-            $response = [
-                'success' => false,
-                'message' => $e->getMessage(),
-            ];
-            return response()->json($response);
-        }
-    }
-    public function getSingleUser($id)
-    {
-        try {
-            $data = AppUser::where('user_id', $id)->first();
-            $response = [
-                'success' => true,
-                'message' => 'User Details Fetched',
-                'data' => $data,
-            ];
-            return response()->json($response);
-        } catch (\Exception $e) {
-
-            $response = [
-                'success' => false,
-                'message' => $e->getMessage(),
-            ];
-            return response()->json($response);
-        }
-    }
+ 
 }
