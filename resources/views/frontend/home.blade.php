@@ -12,7 +12,7 @@
             <div style="background: url(assets/images/banner/suprisebanner.jpg) no-repeat; background-size: cover; border-radius: 0.5rem; background-position: center">
                <div class="ps-lg-12 py-lg-16 col-xxl-5 col-md-7 py-14 px-8 text-xs-center">
                   
-                  <h2 style='background-color: rgba(255, 193, 7, 0.5) !important;' class=" text-bg-warning text-dark display-5 fw-bold mt-4">EasyChows For All</h2>
+                  <h2 style='background-color: rgba(255, 193, 7, 0.5) !important;' class=" text-bg-warning text-dark display-5 fw-bold mt-4">EasyChows For Everyone</h2>
                   <p class="badge text-bg-warning">From The Kitchen - To Your Doorstep.</p><br>
                   <a href="#!" class="btn btn-dark mt-3">
                      Order Now
@@ -59,7 +59,7 @@
                         <a href='/{{$rest->slug}}'>
                            @if($rest->image !== null)
 
-                           <img src='https://cttaste.com/cttaste_files/public/profilePic/{{$rest->image}}' style='width:350px;height:120px;border-radius:5px' class="mb-3 img-fluid lazyload" width='300px' height='150px' alt='vendor_pics'>
+                           <img src='https://easychows.com/easychows_files/public/profilePic/{{$rest->image}}' style='width:350px;height:120px;border-radius:5px' class="mb-3 img-fluid lazyload" width='300px' height='150px' alt='vendor_pics'>
 
                            @else
                            <img src="{{ asset('profilePic/normal.webp') }}" class="mb-3 img-fluid lazyload" style='width:350px;height:120px;border-radius:5px' width='300px' height='150px' alt='vendor_image' />
@@ -113,7 +113,7 @@
                         <a href=''>
                            @if($rest->image !== null)
 
-                           <img src='https://cttaste.com/cttaste_files/public/profilePic/{{$rest->image}}' style='width:350px;height:120px;border-radius:5px;opacity:0.5' class="mb-3 img-fluid lazyload" width='300px' height='150px' alt='vendor_pics'>
+                           <img src='https://easychows.com/easychows_files/public/profilePic/{{$rest->image}}' style='width:350px;height:120px;border-radius:5px;opacity:0.5' class="mb-3 img-fluid lazyload" width='300px' height='150px' alt='vendor_pics'>
 
                            @else
                            <img src="{{ asset('profilePic/normal.webp') }}" class="mb-3 img-fluid lazyload" style='width:350px;height:120px;border-radius:5px;opacity:0.5' width='300px' height='150px' alt='vendor_image' />

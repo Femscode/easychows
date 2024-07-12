@@ -179,7 +179,7 @@
                                                                         <div class="symbol-label" style="background-image: url('{{ $menu['image'] }}')">
                                                                         </div>
                                                                         @else
-                                                                        <div class="symbol-label" style="background-image: url('https://cttaste.com/cttaste_files/public/foodimages/{{ $menu['image'] }}')">
+                                                                        <div class="symbol-label" style="background-image: url('https://easychows.com/easychows_files/public/foodimages/{{ $menu['image'] }}')">
                                                                         </div>
                                                                         @endif
                                                                     </div>
@@ -517,7 +517,7 @@
                                 title: 'Opps,',
                                 icon: 'info',
                                 html: 'You are yet to create a fastpay account, click ' +
-                                    '<a href="https://fastpay.cttaste.com/register">here</a> ' +
+                                    '<a href="">here</a> ' +
                                     'to create one.',
                                 showCloseButton: true,
                                 showCancelButton: true,

@@ -45,7 +45,7 @@
                                     <img class="icon-shape icon-xxl" style='border-radius:5px' src="{{ $menu->image }}">
 
                                     @else
-                                    <img class="icon-shape icon-xxl" style='border-radius:5px' src="https://cttaste.com/cttaste_files/public/foodimages/{{ $menu->image }}">
+                                    <img class="icon-shape icon-xxl" style='border-radius:5px' src="https://easychows.com/easychows_files/public/foodimages/{{ $menu->image }}">
 
                                     @endif
                                     <div class="ms-3">
