@@ -19,7 +19,7 @@
                      <div class="col-md-4">
                         @if($rest->image !== null)
 
-                        <img src='https://easychows.com/easychows_files/public/profilePic/{{$rest->image}}' class="card-img" style='width:350px;height:120px;border-radius:5px;opacity:0.5' class="mb-3 img-fluid lazyload" alt='vendor_pics'>
+                        <img src='https://easychows.com/easychows_files/public/profilePic/{{$rest->image}}' class="card-img" alt='vendor_pics'>
 
                         @else
                         <img src="../assets/images/blog/blog-img-1.jpg"  alt="Card Image">
