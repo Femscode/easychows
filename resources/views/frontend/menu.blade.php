@@ -13,13 +13,34 @@
          <div class="row">
             <div class="col-12">
                <!-- card -->
-               <div class="card py-1 border-0 mb-8">
-                  <div>
-                     <h1 class="fw-bold">{{$rest->name}}</h1>
-                     <h4 class="mb-0">{{$rest->description}}</h4>
-                     <a href='tel:{{$rest->phone}}' class='btn btn-info'>Call To Order</a>
 
-                     <input type='hidden' id='appendmenuplate' value='1' />
+               <div class="card">
+                  <div class="row no-gutters">
+                     <div class="col-md-4">
+                        @if($rest->image !== null)
+
+                        <img src='https://easychows.com/easychows_files/public/profilePic/{{$rest->image}}' class="card-img" style='width:350px;height:120px;border-radius:5px;opacity:0.5' class="mb-3 img-fluid lazyload" alt='vendor_pics'>
+
+                        @else
+                        <img src="../assets/images/blog/blog-img-1.jpg"  alt="Card Image">
+                        @endif
+                     </div>
+                     <div class="col-md-8">
+                        <div class="card-body">
+                           <h1 class="fw-bold">{{$rest->name}}</h1>
+                           <h4 class="mb-0">{{$rest->description}}</h4>
+                           <a href='tel:{{$rest->phone}}' class='btn btn-info'>Call To Order</a>
+
+                           <input type='hidden' id='appendmenuplate' value='1' />
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="card py-1 border-0 mb-8">
+
+                  <div>
+
                   </div>
                </div>
             </div>
@@ -68,7 +89,7 @@
                                     <input data-id='{{$menu->id}}' type="button" value="+" class="addmenu button-plus btn btn-sm" data-field="quantity" />
                                  </div>
                               </div>
-                             
+
                            </div>
                         </li>
 
@@ -76,7 +97,7 @@
 
                      </ul>
                      <!-- btn -->
-                    
+
                   </div>
                </div>
 
@@ -311,9 +332,9 @@
          })
          $("#appendmenuplate").val(id);
          $(".allactive").hide()
-        
+
          $("#active" + id).show();
-        
+
          // $(".cfood").show()
 
       })
