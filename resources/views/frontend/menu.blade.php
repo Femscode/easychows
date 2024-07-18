@@ -29,7 +29,7 @@
                         <div class="card-body">
                            <h1 class="fw-bold">{{$rest->name}}</h1>
                            <h4 class="mb-0">{{$rest->description}}</h4>
-                           <a href='https://wa.me/234{{substr(1,$rest->phone)}}' class='btn btn-info'>Customize Order</a>
+                           <a href='https://wa.me/234{{substr($rest->phone,1)}}' class='btn btn-info'>Customize Order</a>
 
                            <input type='hidden' id='appendmenuplate' value='1' />
                         </div>
