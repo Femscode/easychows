@@ -62,13 +62,9 @@
                               <div class="col-8 col-md-8 col-lg-8">
                                  <div id='pepe{{$menu->category_id}}' class="d-flex">
                                     <!-- <img src="../assets/images/products/product-img-1.jpg" alt="Ecommerce"  /> -->
-                                    @if(substr($menu->image, 0, 5) == 'https')
-                                    <img class="icon-shape icon-xxl" style='border-radius:10px' src="{{ $menu->image }}">
+                                   
+                                    <img class="icon-shape icon-xxl" style='border-radius:10px;width:70px !important' src="https://easychows.com/easychows_files/public/foodimages/{{ $menu->image }}">
 
-                                    @else
-                                    <img class="icon-shape icon-xxl" style='border-radius:10px' src="https://easychows.com/easychows_files/public/foodimages/{{ $menu->image }}">
-
-                                    @endif
                                     <div class="ms-3">
                                        <!-- title -->
                                        <a href="#" class="text-inherit">
