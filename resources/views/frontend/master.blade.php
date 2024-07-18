@@ -16,7 +16,7 @@
       <link href="{{url('assets/libs/tiny-slider/dist/tiny-slider.css')}}" rel="stylesheet" />
 
       <!-- Favicon icon-->
-      <link rel="shortcut icon" type="image/x-icon" href="{{url('assets/images/logo/easychows-logo.jpeg')}}" />
+      <link rel="shortcut icon" type="image/x-icon" href="{{url('assets/images/logo/easychow.svg')}}" />
 
       <meta name="csrf-token" content="{{ csrf_token() }}">
       <!-- Libs CSS -->

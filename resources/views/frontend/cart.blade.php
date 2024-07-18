@@ -7,14 +7,14 @@
 @section('content')
 <main>
 
-    <section class="mb-lg-14 mb-8 mt-8">
+    <section class="mb-lg-14 mb-8 mt-2">
         <div class="container">
             <!-- row -->
             <div class="row">
                 <!-- col -->
                 <div class="col-12">
                     <div>
-                        <div class="mb-8">
+                        <div class="mb-0">
                             <!-- text -->
                             <h1 class="fw-bold mb-0">Checkout</h1>
 
@@ -30,113 +30,29 @@
                 <div class="row">
                     <div class="col-xl-7 col-lg-6 col-md-12">
                         <!-- accordion -->
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div>
                             <!-- accordion item -->
-                            <div class="accordion-item py-4">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <!-- heading one -->
-                                    <a href="#" class="fs-5 text-inherit collapsed h4" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
-                                        <i class="feather-icon icon-map-pin me-2 text-muted"></i>
-                                        Delivery Details
-                                    </a>
-                                </div>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
 
-                                    <div class="d-flex flex-column col-md-12">
-                                        <!--begin::Title-->
-
-                                        <!--end::Title-->
-                                        <!--begin::Input group-->
-                                       
-                                        <div class="d-flex flex-column flex-md-row gap-5">
-                                            <div class="col-md-6">
-                                                <!--begin::Label-->
-                                                <label class="required form-label">Name</label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input required class="form-control" name="name" placeholder="Enter Name" value="" />
-                                                <!--end::Input-->
-                                            </div>
-                                            <div class="col-md-6">
-                                                <!--begin::Label-->
-                                                <label class="form-label">Phone Number</label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input required class="form-control" name="phone" type='number' placeholder="Phone Number" />
-                                                <input type='hidden' name='discount' value='{{ $discount }}' />
-                                                <!--end::Input-->
-                                            </div>
-                                        </div>
-
-                                        <div class="d-flex flex-column flex-md-row gap-5">
-                                            <div class="col-md-6">
-                                                <!--begin::Label-->
-                                                <label class="required form-label">Location</label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <select class='form-control' id='location' required name='location'>
-                                                    <option data-value='0' value=''>Select Location</option>
-                                                    <option value="Pick it up myself" data-value='0'>Work In (Pick it up myself)</option>
-
-                                                    @foreach($deliveries as $key => $del)
-                                                    {{-- <option value="{{ $del->name }}"
-                                                    data-value='@if($promo) 0 @else {{ $del->price }} @endif'>{{
-                                                            $del->name }} - @if($promo) FREE💃🏽😍 @else ₦{{
-                                                            number_format($del->price) }}@endif</option> --}}
-                                                    <option value="{{ $del->name }}" data-value='{{ $del->price }}'>
-                                                        {{ $del->name }} - ₦{{ number_format($del->price) }}
-                                                    </option>
-
-                                                    @endforeach
-                                                    <option value="Others" data-value='0'>Others</option>
-                                                </select>
-
-                                            </div>
-                                            <div class="col-md-6">
-                                                <!--begin::Label-->
-                                                <label class="form-label">Delivery Address</label>
-                                                <!--end::Label-->
-                                                <!--begin::Input-->
-                                                <input required class="form-control" name="address" placeholder="A proper description of your hostel" />
-                                                <!--end::Input-->
-                                            </div>
-
-                                        </div>
-                                      
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="accordion-item py-4">
-                                <a href="#" class="text-inherit h5" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                                    <i class="feather-icon icon-credit-card me-2 text-muted"></i>
-                                    Order Details
-                                    <!-- collapse -->
-                                </a>
-                                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="mt-5">
+                            <div class=" py-1">
+                            
+                                <div id="flush-collapseFour" class="accordion-collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="mt-0">
                                         <div class="card-body pt-0">
-                                            <div class="d-flex flex-column gap-10">
-                                                <!--begin::Input group-->
-
-                                                <!--end::Input group-->
-                                                <!--begin::Separator-->
+                                            <div class="d-flex flex-column gap-4">
+                                               
                                                 <div class="separator"></div>
-                                                <!--end::Separator-->
-                                                <!--begin::Search products-->
-
+                                               
                                                 <div class="d-flex align-items-center position-relative mb-n7">
 
-                                                    <h4 class='float-right' id='total_price'>Total Price: #
+                                                    <!-- <h4 class='float-right' id='total_price'>Total Price: #
                                                         {{number_format($carts->totalPrice)}}
-                                                    </h4>
+                                                    </h4> -->
                                                 </div>
                                                 @for($j = 1;$j<=$cc;$j++) <?php $great = 'pack' . $j; ?> @if(isset($great)) <div class='row' id='row{{ $j }}'>
                                                     <div id='tablep{{ $j }}' class='h2 col-md-6'>
                                                         Pack {{ $j }}
                                                     </div>
-                                                    {{-- @if($j == $cc)
+                                                    {{--@if($j == $cc)
                                                     <div class='col-md-6'>
                                                         <a data-id='{{ $j }}'
                                                     class='deleteplate float-right btn btn-danger btn-sm'>Delete
@@ -230,6 +146,10 @@
                                     </div>
                                 </div>
                             </div>
+                            
+                           
+
+                           
                         </div>
                     </div>
                 </div>
@@ -237,6 +157,82 @@
 
             <div class="col-md-12 offset-xl-1 col-xl-4 col-lg-6">
                 <div class="mt-4 mt-lg-0">
+
+                <div class=" py-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <!-- heading one -->
+                                    <a href="#" class="fs-5 text-inherit collapsed h4" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                                        <i class="feather-icon icon-map-pin me-2 text-muted"></i>
+                                        Delivery Details
+                                    </a>
+                                </div>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
+
+                                    <div class="d-flex flex-column col-md-12">
+                                        <!--begin::Title-->
+
+                                        <!--end::Title-->
+                                        <!--begin::Input group-->
+                                       
+                                        <div class="d-flex flex-column flex-md-row gap-5">
+                                            <div class="col-md-6">
+                                                <!--begin::Label-->
+                                                <label class="required form-label">Name</label>
+                                                <!--end::Label-->
+                                                <!--begin::Input-->
+                                                <input required class="form-control" name="name" placeholder="Enter Name" value="" />
+                                                <!--end::Input-->
+                                            </div>
+                                            <div class="col-md-6">
+                                                <!--begin::Label-->
+                                                <label class="form-label">Phone Number</label>
+                                                <!--end::Label-->
+                                                <!--begin::Input-->
+                                                <input required class="form-control" name="phone" type='number' placeholder="Phone Number" />
+                                                <input type='hidden' name='discount' value='{{ $discount }}' />
+                                                <!--end::Input-->
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-column flex-md-row gap-5">
+                                            <div class="col-md-6">
+                                                <!--begin::Label-->
+                                                <label class="required form-label">Location</label>
+                                                <!--end::Label-->
+                                                <!--begin::Input-->
+                                                <select class='form-control' id='location' required name='location'>
+                                                    <option data-value='0' value=''>Select Location</option>
+                                                    <option value="Pick it up myself" data-value='0'>Work In (Pick it up myself)</option>
+
+                                                    @foreach($deliveries as $key => $del)
+                                                    {{-- <option value="{{ $del->name }}"
+                                                    data-value='@if($promo) 0 @else {{ $del->price }} @endif'>{{
+                                                            $del->name }} - @if($promo) FREE💃🏽😍 @else ₦{{
+                                                            number_format($del->price) }}@endif</option> --}}
+                                                    <option value="{{ $del->name }}" data-value='{{ $del->price }}'>
+                                                        {{ $del->name }} - ₦{{ number_format($del->price) }}
+                                                    </option>
+
+                                                    @endforeach
+                                                    <option value="Others" data-value='0'>Others</option>
+                                                </select>
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <!--begin::Label-->
+                                                <label class="form-label">Delivery Address</label>
+                                                <!--end::Label-->
+                                                <!--begin::Input-->
+                                                <input required class="form-control" name="address" placeholder="A proper description of your hostel" />
+                                                <!--end::Input-->
+                                            </div>
+
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+
+                            </div>
                     <div class="card shadow-sm">
                         <h5 class="px-6 py-4 bg-transparent mb-0">Order Details</h5>
                         <ul class="list-group list-group-flush">

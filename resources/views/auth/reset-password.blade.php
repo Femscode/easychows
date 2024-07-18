@@ -24,7 +24,7 @@
 
                     <form method="POST" action="{{ route('password.update') }}">
                             @csrf
-                            <h1 class="text-dark mb-3">Set New Password</h1>
+                          
                             <!--end::Title-->
                             <!--begin::Link-->
                             <x-auth-validation-errors class="alert alert-danger" :errors="$errors" />

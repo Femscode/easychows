@@ -29,7 +29,7 @@
                         <div class="card-body">
                            <h1 class="fw-bold">{{$rest->name}}</h1>
                            <h4 class="mb-0">{{$rest->description}}</h4>
-                           <a href='tel:{{$rest->phone}}' class='btn btn-info'>Call To Order</a>
+                           <a href='https://wa.me/234{{substr(1,$rest->phone)}}' class='btn btn-info'>Customize Order</a>
 
                            <input type='hidden' id='appendmenuplate' value='1' />
                         </div>
@@ -63,10 +63,10 @@
                                  <div id='pepe{{$menu->category_id}}' class="d-flex">
                                     <!-- <img src="../assets/images/products/product-img-1.jpg" alt="Ecommerce"  /> -->
                                     @if(substr($menu->image, 0, 5) == 'https')
-                                    <img class="icon-shape icon-xxl" style='border-radius:5px' src="{{ $menu->image }}">
+                                    <img class="icon-shape icon-xxl" style='border-radius:10px' src="{{ $menu->image }}">
 
                                     @else
-                                    <img class="icon-shape icon-xxl" style='border-radius:5px' src="https://easychows.com/easychows_files/public/foodimages/{{ $menu->image }}">
+                                    <img class="icon-shape icon-xxl" style='border-radius:10px' src="https://easychows.com/easychows_files/public/foodimages/{{ $menu->image }}">
 
                                     @endif
                                     <div class="ms-3">
