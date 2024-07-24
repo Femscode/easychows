@@ -62,8 +62,8 @@
                               <div class="col-8 col-md-8 col-lg-8">
                                  <div id='pepe{{$menu->category_id}}' class="d-flex">
                                     <!-- <img src="../assets/images/products/product-img-1.jpg" alt="Ecommerce"  /> -->
-                                    <img class="icon-shape" 
-     style="border-radius: 10px; width: 100px; height: 70px; object-fit: cover;" 
+                                    <img class="" 
+     style="border-radius: 10px; width: 100px !important; height: 70px !important; object-fit: cover;" 
      src="https://easychows.com/easychows_files/public/foodimages/{{ $menu->image }}">
 
 
