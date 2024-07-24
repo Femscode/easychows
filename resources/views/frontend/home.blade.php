@@ -9,7 +9,7 @@
    <section class="mt-8">
       <div class="container">
          <div class="hero-slider">
-            <div style="background: url(assets/images/banner/suprisebanner.jpg) no-repeat; background-size: cover; border-radius: 0.5rem; background-position: center">
+            <div style="background: url(assets/images/banner/banner2.jpg) no-repeat; background-size: cover; border-radius: 0.5rem; background-position: center">
                <div class="ps-lg-12 py-lg-16 col-xxl-5 col-md-7 py-14 px-8 text-xs-center">
                   
                   <h2 style='background-color: rgba(255, 193, 7, 0.5) !important;' class=" text-bg-warning text-dark display-5 fw-bold mt-4">EasyChows For Everyone</h2>
@@ -20,7 +20,8 @@
                   </a>
                </div>
             </div>
-            <div style="background: url(assets/images/banner/suprisebanner.jpg) no-repeat; background-size: cover; border-radius: 0.5rem; background-position: center">
+           
+            <div style="background: url(assets/images/banner/banner4.jpg) no-repeat; background-size: cover; border-radius: 0.5rem; background-position: center">
                <div class="ps-lg-12 py-lg-16 col-xxl-5 col-md-7 py-14 px-8 text-xs-center">
                  <h2 style='background-color: rgba(225,193, 7, 0.5) !important;' class=" text-bg-warning text-dark display-5 fw-bold mt-4">
                      Get Your Food In
@@ -33,6 +34,20 @@
                   </a>
                </div>
             </div>
+            <div style="background: url(assets/images/banner/banner5.jpg) no-repeat; background-size: cover; border-radius: 0.5rem; background-position: center">
+               <div class="ps-lg-12 py-lg-16 col-xxl-5 col-md-7 py-14 px-8 text-xs-center">
+                 <h2 class=" text-white display-5 fw-bold mt-4">
+                     Enjoy Every
+                     <span class="text-warning">Single</span> Bite
+                  </h2>
+                  <p class="badge text-bg-warning">Got a craving? We deliver it in a matter of seconds!</p>
+                  <a href="#!" class="btn btn-dark mt-3">
+                     Order Now
+                     <i class="feather-icon icon-arrow-right ms-1"></i>
+                  </a>
+               </div>
+            </div>
+           
          </div>
       </div>
    </section>

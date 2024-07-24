@@ -141,7 +141,7 @@ class OrderController extends Controller
         }
 
         // dd($firi);
-        $therest = str_replace(['{', '::', 'id', '"', '[', ']', 'name:', ',', ':'], '', $firi);
+        $therest = str_replace(['{', '::', 'id', '"', '[', ']', 'name:', ',', ':','&'], '', $firi);
         $therest2 = str_replace('}', '%0a', $therest);
 
         for ($i = 1; $i <= 10; $i++) {

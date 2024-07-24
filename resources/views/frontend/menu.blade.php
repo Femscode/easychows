@@ -19,10 +19,13 @@
                      <div class="col-md-4">
                         @if($rest->image !== null)
 
-                        <img src='https://easychows.com/easychows_files/public/profilePic/{{$rest->image}}' class="card-img" style='width:100%;height:250px;border-radius:5px' class="mb-3 img-fluid lazyload" alt='vendor_pics'>
+                        <img src="https://easychows.com/easychows_files/public/profilePic/{{$rest->image}}" 
+     class="card-img mb-3 img-fluid lazyload" 
+     style="width: 250px; height: 250px; object-fit: cover; border-radius: 5px;" 
+     alt="vendor_pics">
 
                         @else
-                        <img src="../assets/images/blog/blog-img-1.jpg"  alt="Card Image">
+                        <img src="{{url('assets/images/banner/banner2.jpg')}}"  alt="Card Image">
                         @endif
                      </div>
                      <div class="col-md-8">
