@@ -63,7 +63,7 @@
                                  <div id='pepe{{$menu->category_id}}' class="d-flex">
                                     <!-- <img src="../assets/images/products/product-img-1.jpg" alt="Ecommerce"  /> -->
                                     <img class="icon-shape icon-xxl" 
-     style="border-radius: 10px; width: 70px; height: 70px; object-fit: cover;" 
+     style="border-radius: 10px; width: 100px; height: 70px; object-fit: cover;" 
      src="https://easychows.com/easychows_files/public/foodimages/{{ $menu->image }}">
 
                                     <div class="ms-3">
@@ -81,10 +81,19 @@
                                  <!-- input -->
                                  <!-- input -->
                                  <div class="input-group input-spinner">
-                                    <input type="button" data-id='{{$menu->id}}' disabled id='deletefood{{ $menu->id }}' value="-" class="deletefood button-minus btn btn-sm" data-field="quantity" />
-                                    <div id='currentfood{{$menu->id}}' value='0' class="cfood quantity-field form-control-sm form-input">0</div>
-                                    <input data-id='{{$menu->id}}' type="button" value="+" class="addmenu button-plus btn btn-sm" data-field="quantity" />
-                                 </div>
+    <input type="button" data-id="{{$menu->id}}" disabled id="deletefood{{ $menu->id }}" value="-" 
+           class="deletefood button-minus btn btn-md" 
+           style="font-size: 1.5rem; width: 50px; height: 50px;" 
+           data-field="quantity" />
+    <div id="currentfood{{$menu->id}}" value="0" 
+         class="cfood quantity-field form-control-sm form-input" 
+         style="font-size: 1.5rem; width: 50px; height: 50px; text-align: center;">0</div>
+    <input data-id="{{$menu->id}}" type="button" value="+" 
+           class="addmenu button-plus btn btn-md" 
+           style="font-size: 1.5rem; width: 50px; height: 50px;" 
+           data-field="quantity" />
+</div>
+
                               </div>
 
                            </div>
