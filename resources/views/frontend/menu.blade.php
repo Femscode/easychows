@@ -19,14 +19,10 @@
                      <div class="col-md-4">
                         @if($rest->image !== null)
 
-                        <img src="https://easychows.com/easychows_files/public/profilePic/{{$rest->image}}" 
-     class="card-img mb-3 img-fluid lazyload" 
-     style="width: 250px; height: 250px; object-fit: cover; border-radius: 5px;" 
-     alt="vendor_pics">
-
+                        <img src='https://easychows.com/easychows_files/public/profilePic/{{$rest->image}}' class="card-img" style='width:100%;height:250px;border-radius:5px' class="mb-3 img-fluid lazyload" alt='vendor_pics'>
 
                         @else
-                        <img src="{{url('assets/images/banner/banner2.jpg')}}"  alt="Card Image">
+                        <img src="{{ url('/assets/images/banner/banner2.jpg') }}"  alt="Card Image">
                         @endif
                      </div>
                      <div class="col-md-8">
@@ -66,8 +62,9 @@
                               <div class="col-8 col-md-8 col-lg-8">
                                  <div id='pepe{{$menu->category_id}}' class="d-flex">
                                     <!-- <img src="../assets/images/products/product-img-1.jpg" alt="Ecommerce"  /> -->
-                                   
-                                    <img class="icon-shape icon-xxl" style='border-radius:10px;width:70px !important' src="https://easychows.com/easychows_files/public/foodimages/{{ $menu->image }}">
+                                    <img class="icon-shape icon-xxl" 
+     style="border-radius: 10px; width: 70px; height: 70px; object-fit: cover;" 
+     src="https://easychows.com/easychows_files/public/foodimages/{{ $menu->image }}">
 
                                     <div class="ms-3">
                                        <!-- title -->
