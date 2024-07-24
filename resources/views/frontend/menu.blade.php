@@ -24,6 +24,7 @@
      style="width: 250px; height: 250px; object-fit: cover; border-radius: 5px;" 
      alt="vendor_pics">
 
+
                         @else
                         <img src="{{url('assets/images/banner/banner2.jpg')}}"  alt="Card Image">
                         @endif
