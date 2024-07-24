@@ -62,8 +62,8 @@
                               <div class="col-8 col-md-8 col-lg-8">
                                  <div id='pepe{{$menu->category_id}}' class="d-flex">
                                     <!-- <img src="../assets/images/products/product-img-1.jpg" alt="Ecommerce"  /> -->
-                                    <img class="icon-shape icon-xxl" 
-     style="border-radius: 10px; width: 100px; height: 70px; object-fit: cover;" 
+                                    <img class="icon-shape" 
+     style="border-radius: 10px; width: 100px !important; max-width: 100px !important; height: 70px; object-fit: cover;" 
      src="https://easychows.com/easychows_files/public/foodimages/{{ $menu->image }}">
 
                                     <div class="ms-3">
@@ -80,19 +80,21 @@
                               <div class="col-4 col-md-4 col-lg-4">
                                  <!-- input -->
                                  <!-- input -->
+                                
                                  <div class="input-group input-spinner">
     <input type="button" data-id="{{$menu->id}}" disabled id="deletefood{{ $menu->id }}" value="-" 
            class="deletefood button-minus btn btn-md" 
-           style="font-size: 1.5rem; width: 50px; height: 50px;" 
+           style="font-size: 1.2rem; width: 40px; height: 40px; border-radius: 5px; background-color: #f8d7da; border: 1px solid #f5c6cb; color: #721c24;" 
            data-field="quantity" />
     <div id="currentfood{{$menu->id}}" value="0" 
          class="cfood quantity-field form-control-sm form-input" 
-         style="font-size: 1.5rem; width: 50px; height: 50px; text-align: center;">0</div>
+         style="font-size: 1.2rem; width: 40px; height: 40px; line-height: 40px; text-align: center; border: 1px solid #ced4da;">0</div>
     <input data-id="{{$menu->id}}" type="button" value="+" 
            class="addmenu button-plus btn btn-md" 
-           style="font-size: 1.5rem; width: 50px; height: 50px;" 
+           style="font-size: 1.2rem; width: 40px; height: 40px; border-radius: 5px; background-color: #d4edda; border: 1px solid #c3e6cb; color: #155724;" 
            data-field="quantity" />
 </div>
+
 
                               </div>
 
