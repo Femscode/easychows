@@ -62,10 +62,11 @@
                               <div class="col-8 col-md-8 col-lg-8">
                                  <div id='pepe{{$menu->category_id}}' class="d-flex">
                                     <!-- <img src="../assets/images/products/product-img-1.jpg" alt="Ecommerce"  /> -->
-                                    <img class="" 
-     style="border-radius: 10px; width: 100px !important; height: 70px !important; object-fit: cover;" 
-     src="https://easychows.com/easychows_files/public/foodimages/{{ $menu->image }}">
-
+                                    <div style="width: 100px; height: 70px; overflow: hidden; border-radius: 10px;">
+    <img class="icon-shape" 
+         style="width: 100%; height: 100%; object-fit: cover;" 
+         src="https://easychows.com/easychows_files/public/foodimages/{{ $menu->image }}">
+</div>
 
                                     <div class="ms-3">
                                        <!-- title -->

@@ -1,4 +1,4 @@
-@extends('newdashboard.master')
+@extends('dashboard.master')
 @section('header')
 @endsection
 @section('content')
