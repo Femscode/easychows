@@ -22,7 +22,7 @@
                         <img src='https://easychows.com/easychows_files/public/profilePic/{{$rest->image}}' class="card-img" style='width:100%;height:250px;border-radius:5px' class="mb-3 img-fluid lazyload" alt='vendor_pics'>
 
                         @else
-                        <img src="{{ url('/assets/images/banner/banner2.jpg') }}"  alt="Card Image">
+                        <img src="{{ url('/assets/images/banner/banner2.jpg') }}" alt="Card Image">
                         @endif
                      </div>
                      <div class="col-md-8">
@@ -59,43 +59,33 @@
                         <li class="list-group-item ps-0">
                            <!-- row -->
                            <div class="row align-items-center">
-                              <div class="col-8 col-md-8 col-lg-8">
-                                 <div id='pepe{{$menu->category_id}}' class="d-flex">
-                                    <!-- <img src="../assets/images/products/product-img-1.jpg" alt="Ecommerce"  /> -->
-                                    <div style="width: 100px; height: 70px; overflow: hidden; border-radius: 10px;">
-    <img class="icon-shape" 
-         style="min-width: 100px; min-height: 70px; width: 100%; height: 100%; object-fit: cover;" 
-         src="https://easychows.com/easychows_files/public/foodimages/{{ $menu->image }}">
+                           <div class="col-8 col-md-8 col-lg-8">
+    <div id='pepe{{$menu->category_id}}' class="d-flex">
+        <div style="width: 100px; height: 70px; overflow: hidden; border-radius: 10px; background-color: #f8f8f8;">
+            <img class="icon-shape" 
+                 style="width: 100%; height: 100%; object-fit: cover;" 
+                 src="https://easychows.com/easychows_files/public/foodimages/{{ $menu->image }}" 
+                 onerror="this.src='default-image-url.jpg';">
+        </div>
+        <div class="ms-3">
+            <a href="#" class="text-inherit">
+                <h6 class="mb-0">{{$menu->name}}</h6>
+            </a>
+            <span class="fw-bold">₦{{number_format($menu->price)}}</span>
+        </div>
+    </div>
 </div>
 
-                                    <div class="ms-3">
-                                       <!-- title -->
-                                       <a href="#" class="text-inherit">
-                                          <h6 class="mb-0">{{$menu->name}}</h6>
-                                       </a>
-                                       <span class="fw-bold">₦{{number_format($menu->price)}}</span>
-
-                                    </div>
-                                 </div>
-                              </div>
                               <!-- input group -->
                               <div class="col-4 col-md-4 col-lg-4">
                                  <!-- input -->
                                  <!-- input -->
-                                
+
                                  <div class="input-group input-spinner">
-    <input type="button" data-id="{{$menu->id}}" disabled id="deletefood{{ $menu->id }}" value="-" 
-           class="deletefood button-minus btn btn-md" 
-           style="font-size: 1.2rem; width: 40px; height: 40px; border-radius: 5px; background-color: #f8d7da; border: 1px solid #f5c6cb; color: #721c24;" 
-           data-field="quantity" />
-    <div id="currentfood{{$menu->id}}" value="0" 
-         class="cfood quantity-field form-control-sm form-input" 
-         style="font-size: 1.2rem; width: 40px; height: 40px; line-height: 40px; text-align: center; border: 1px solid #ced4da;">0</div>
-    <input data-id="{{$menu->id}}" type="button" value="+" 
-           class="addmenu button-plus btn btn-md" 
-           style="font-size: 1.2rem; width: 40px; height: 40px; border-radius: 5px; background-color: #d4edda; border: 1px solid #c3e6cb; color: #155724;" 
-           data-field="quantity" />
-</div>
+                                    <input type="button" data-id="{{$menu->id}}" disabled id="deletefood{{ $menu->id }}" value="-" class="deletefood button-minus btn btn-md" style="font-size: 1.2rem; width: 40px; height: 40px; border-radius: 5px; background-color: #f8d7da; border: 1px solid #f5c6cb; color: #721c24;" data-field="quantity" />
+                                    <div id="currentfood{{$menu->id}}" value="0" class="cfood quantity-field form-control-sm form-input" style="font-size: 1.2rem; width: 40px; height: 40px; line-height: 40px; text-align: center; border: 1px solid #ced4da;">0</div>
+                                    <input data-id="{{$menu->id}}" type="button" value="+" class="addmenu button-plus btn btn-md" style="font-size: 1.2rem; width: 40px; height: 40px; border-radius: 5px; background-color: #d4edda; border: 1px solid #c3e6cb; color: #155724;" data-field="quantity" />
+                                 </div>
 
 
                               </div>
