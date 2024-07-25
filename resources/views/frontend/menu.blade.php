@@ -59,22 +59,19 @@
                         <li class="list-group-item ps-0">
                            <!-- row -->
                            <div class="row align-items-center">
-                           <div class="col-8 col-md-8 col-lg-8">
-    <div id='pepe{{$menu->category_id}}' class="d-flex">
-        <div style="width: 100px; height: 70px; overflow: hidden; border-radius: 10px; background-color: #f8f8f8;">
-            <img class="icon-shape" 
-                 style="width: 100%; height: 100%; object-fit: cover;" 
-                 src="https://easychows.com/easychows_files/public/foodimages/{{ $menu->image }}" 
-                 onerror="this.src='default-image-url.jpg';">
-        </div>
-        <div class="ms-3">
-            <a href="#" class="text-inherit">
-                <h6 class="mb-0">{{$menu->name}}</h6>
-            </a>
-            <span class="fw-bold">₦{{number_format($menu->price)}}</span>
-        </div>
-    </div>
-</div>
+                              <div class="col-8 col-md-8 col-lg-8">
+                                 <div id='pepe{{$menu->category_id}}' class="d-flex">
+                                    <div style='max-height: 100px;max-width:100px'>
+                                    <img height="70px" width="100px" style="object-fit: cover; border-radius: 10px;" class="image-fluid"  src="https://easychows.com/easychows_files/public/foodimages/{{ $menu->image }}">
+                                    </div>
+                                    <div class="ms-3">
+                                       <a href="#" class="text-inherit">
+                                          <h6 class="mb-0">{{$menu->name}}</h6>
+                                       </a>
+                                       <span class="fw-bold">₦{{number_format($menu->price)}}</span>
+                                    </div>
+                                 </div>
+                              </div>
 
                               <!-- input group -->
                               <div class="col-4 col-md-4 col-lg-4">
