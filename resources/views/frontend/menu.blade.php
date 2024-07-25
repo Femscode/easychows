@@ -64,7 +64,7 @@
                                     <!-- <img src="../assets/images/products/product-img-1.jpg" alt="Ecommerce"  /> -->
                                     <div style="width: 100px; height: 70px; overflow: hidden; border-radius: 10px;">
     <img class="icon-shape" 
-         style="width: 100%; height: 100%; object-fit: cover;" 
+         style="min-width: 100px; min-height: 70px; width: 100%; height: 100%; object-fit: cover;" 
          src="https://easychows.com/easychows_files/public/foodimages/{{ $menu->image }}">
 </div>
 
