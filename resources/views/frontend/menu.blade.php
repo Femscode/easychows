@@ -19,7 +19,7 @@
                      <div class="col-md-4">
                         @if($rest->image !== null)
 
-                        <img src='https://easychows.com/easychows_files/public/profilePic/{{$rest->image}}' class="card-img" style='width:100%;height:250px;border-radius:5px' class="mb-3 img-fluid lazyload" alt='vendor_pics'>
+                        <img src='https://easychows.com/easychows_files/public/profilePic/{{$rest->image}}' class="card-img" style='width:100%;height:250px;border-radius:5px; background-repeat: no-repeat; background-size: cover; background-position: right' alt='vendor_pics'>
 
                         @else
                         <img src="{{ url('/assets/images/banner/banner2.jpg') }}" alt="Card Image">

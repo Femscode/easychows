@@ -20,6 +20,7 @@
       <link rel="icon" href="{{url('assets/images/logo/easychowlogo.jpeg')}}"  sizes="64x64" type="image/x-icon">
     <link rel="icon" href="{{url('assets/images/logo/easychowlogo.jpeg')}}"  sizes="64x64" type="image/png">
     <link rel="apple-touch-icon" href="{{url('assets/images/logo/easychowlogo.jpeg')}}" sizes="64x64" >
+    <meta property="og:image" content="{{url('assets/images/logo/easychowlogo.jpeg')}}" />
 
       <meta name="csrf-token" content="{{ csrf_token() }}">
       <!-- Libs CSS -->
