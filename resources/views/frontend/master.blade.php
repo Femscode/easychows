@@ -57,7 +57,7 @@
       </script>
    </head>
 
-   <body>
+   <body style='background:#E8F5E9'>
       <!-- navbar -->
       <div class="border-bottom">
          <!-- <div class="bg-light py-1">
@@ -74,11 +74,11 @@
                   <div class="col-xxl-2 col-lg-3 col-md-6 col-5 ">
                      <a class="navbar-brand d-none d-lg-block" href="/">
                         
-                        <img src="{{url('assets/images/logo/easychows-logo.jpeg')}}" height='70px' width='100px' alt="EasyChow Logo" />
+                        <img src="{{url('assets/images/logo/easychows-logo.jpeg')}}" style='border-radius: 5px; background:#E8F5E9' height='70px' width='100px' alt="EasyChow Logo" />
                      </a>
                      <div class="d-flex justify-content-between w-100 d-lg-none">
                         <a class="navbar-brand" href="/">
-                           <img src="{{url('assets/images/logo/easychows-logo.jpeg')}}"  height='70px' width='100px' alt="EasyChow Logo" />
+                           <img src="{{url('assets/images/logo/easychows-logo.jpeg')}}" style='border-radius: 5px; background:#E8F5E9'  height='70px' width='100px' alt="EasyChow Logo" />
                         </a>
                      </div>
                   </div>

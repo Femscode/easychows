@@ -1,12 +1,19 @@
 @extends('frontend.master')
 
 @section('header')
+<style> 
+  @media (max-width: 767px) {
+            .hero-slider .background .content {
+                height: 300px; /* Height for mobile devices */
+            }
+        }
+</style>
 
 @endsection
 
 @section('content')
-<main>
-   <section class="mt-8">
+<main style='background:#E8F5E9'>
+   <section class="mt-4">
       <div class="container">
          <div class="hero-slider">
             <div style="background: url(assets/images/banner/banner2.jpg) no-repeat; background-size: cover; border-radius: 0.5rem; background-position: center">
@@ -57,7 +64,25 @@
       <div class="container">
          <div class="row">
             <div class="col-12 mb-6">
-               <h3 class="mb-0">Available Vendors</h3>
+               <h3 class="mb-0 heading">Discover Top Vendors</h3>
+               <style> 
+                .heading {
+    font-family: 'Poppins', sans-serif; /* Modern and clean font */
+    font-size: 1.5rem; /* Large and impactful */
+    font-weight: 700; /* Bold for emphasis */
+    color: #333; /* Dark color for contrast */
+    text-align: center; /* Center the heading */
+    background: linear-gradient(135deg, #FFA500 0%, #FFDAB9 100%); /* Soft gradient that contrasts with the background */
+    padding: 20px 40px; /* Ample padding for a balanced look */
+    border-radius: 15px; /* Rounded corners for a friendly appearance */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow for emphasis */
+    margin: 20px auto; /* Spacing around the heading */
+    display: inline-block; /* Fit to text size */
+    text-transform: uppercase; /* Make the text uppercase for a strong impact */
+    letter-spacing: 1px; /* Slight letter spacing for readability */
+}
+
+               </style>
             </div>
          </div>
 
