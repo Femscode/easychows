@@ -12,7 +12,7 @@
 @endsection
 
 @section('content')
-<main style='background:#E8F5E9'>
+<main style='background:#FFF4E6'>
    <section class="mt-4">
       <div class="container">
          <div class="hero-slider">
